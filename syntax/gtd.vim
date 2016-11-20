@@ -28,7 +28,7 @@ endif
     syn match gtdTodoItem "^\s*\[_\] .*" contains=gtdContext
     syn match gtdDoneItem "^\s*\[x\] .*"
     syn match gtdListItem "^\s*- .*" contains=gtdContext
-    syn match gtdExecItem "^\s*#! .*"
+    syn match gtdExecItem "^\s*#!.*"
     syn match gtdContext "\v\@\w*"
 
 
