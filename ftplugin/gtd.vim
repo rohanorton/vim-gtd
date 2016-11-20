@@ -3,6 +3,17 @@
 " Maintainer: Rohan Orton
 " Latest Revision: 19 November 2016
 
+" Toggle Todo Items
+function! ToggleTodo()
+    if match(getline('.'), '[_]') != -1
+        substitute/\[_\]/[x]/
+    elseif match(getline('.'), '[x]') != -1
+        substitute/\[x\]/[_]/
+    endif
+endfunction
+
+noremap <silent><buffer> ;; :call ToggleTodo()<cr>
+
 " Execute Line function:
 " Idea and implementation is taken from vimoutliner
 " https://github.com/vimoutliner/vimoutliner/blob/master/ftplugin/votl.vim#L519
