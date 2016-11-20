@@ -1,0 +1,26 @@
+# Heading:
+
+    [+] Project:
+        [_] Todo item (first doable item is implicitly "next action")
+            [_] Nested todo item
+        [x] Completed todo item
+        [_] Priority level signified by exclamation points !!!
+        [_] Context added with at-sign @home yeh!
+        - Non-action item: useful for creating things like reading lists
+        """
+        # Multiline Text Block
+
+        Useful for providing information
+
+        Able to contain *markdown*! Including syntax highlighted codeblocks
+        """
+        [_] Common tags
+            WAITING: payday
+            DUE: 01/12/2016
+            STARTED: 20/02/2016
+            TAKES: <30 minutes
+            ENERGY: 3
+
+    [+] Another Project:
+        #! echo "a shebang indicates an executable task which is invoked with <leader>e";
+

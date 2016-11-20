@@ -30,36 +30,7 @@ with other applications (e.g. an elm gtd app, a siri integrations...)
 
 ## Syntax
 
-Some thoughts on what the syntax should be like...
-
-```gtd
-# Heading:
-
-    [+] Project:
-        [_] Todo item (first doable item is implicitly "next action")
-            [_] Nested todo item
-        [x] Completed todo item
-        [_] Priority level signified by exclamation points !!!
-        [_] Context added with at-sign @home
-        - Non-action item: useful for creating things like reading lists
-        """
-        # Multiline Text Block
-
-        Useful for providing information
-
-        Able to contain *markdown*! Including syntax highlighted codeblocks
-        """
-        [_] Common tags
-            WAITING: payday
-            DUE: 2016/12/01
-            STARTED: 2016/02/20
-            TAKES: <30 minutes
-            ENERGY: 3
-
-    [+] Another Project:
-        {- btw, empty lines are preserved in AST, but have no significance -}
-        #! echo "a shebang indicates an executable task which is invoked with <leader>e";
-```
+![Example Syntax](https://raw.github.com/rohanorton/vim-gtd/master/example/example.png)
 
 ## Commands
 
